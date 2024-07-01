@@ -1,3 +1,10 @@
+function showConfirmation() {
+  // Simulate form submission (since we can't actually submit to the external service here)
+  // Assuming form submission is successful
+  window.alert("Your message has been sent! Thank you for contacting me.");
+  return false; // Prevent form submission
+}
+
 /* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction(){
     var menuBtn = document.getElementById("myNavMenu");

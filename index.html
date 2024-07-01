@@ -196,48 +196,39 @@
        <!-- -------------- CONTACT BOX ---------------- -->
 
        <section class="section" id="contact">
-          <div class="top-header">
+        <div class="top-header">
             <h1>Get in touch</h1>
             <span>Do you have a project in your mind, contact me here</span>
-          </div>
-          <div class="row">
-             <div class="col">
+        </div>
+        <div class="row">
+            <div class="col">
                 <div class="contact-info">
-                    <form action="https://api.staticforms.xyz/submit" method="post"></form>
                     <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
                     <p><i class="uil uil-envelope"></i> Email: lucas.freire@dcomp.ufs.br</p>
                     <p><i class="uil uil-phone"></i> Tel: +55 79996047071</p>
                 </div>
-             </div>
-             <div class="col">
+            </div>
+            <div class="col">
                 <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
-                    </div>
-                    <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-button">
-                        <a href="return.html"><button type="submit" class="btn">Send Message</button></a>
-                    </div>
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <div class="form-inputs">
+                            <input type="text" class="input-field" name="name" placeholder="Name" required>
+                            <input type="email" class="input-field" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="text-area">
+                            <textarea name="message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button type="submit" onclick="showConfirmation()" class="btn">Send Message</button>
+                        </div>
+                        <input type="hidden" name="accessKey" value="4c019aec-1b77-4fac-9b38-331b0e9b9f05">
+                        <input type="hidden" name="redirectTo" value="https://miguells10.github.io/Portfolio-2/index.html">
+                    </form>
                 </div>
-             </div>
-          </div>
-
-          <input
-          type="hidden"
-          name="accessKey"
-          value="4c019aec-1b77-4fac-9b38-331b0e9b9f05"
-        />
-        <input
-          type="hidden"
-          name="redirectTo"
-          value="https://miguells10.github.io/Portfolio/return.html"
-        />
-
-       </section>
-
+            </div>
+        </div>
+    </section>
+    
     </main>
 
 
